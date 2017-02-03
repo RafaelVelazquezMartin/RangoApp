@@ -1,0 +1,24 @@
+<!doctype html>
+
+{% load staticfiles	%}	<!-- New line -->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>About</title>
+</head>
+
+<body>
+	<h1>About</h1>
+	<div>
+		This tutorial has been put together by Rafael.<br/>
+		<img src="{% static "images/dog.jpg" %}" alt="Picture of a dog"/>
+	</div>
+	<div>
+		<img src="{{MEDIA_URL}}cat.jpg" alt="Picture of a cat" />
+	</div>
+	<div>
+		<a href="/rango/">Index</a><br/>
+	</div>
+</body>
+</html>

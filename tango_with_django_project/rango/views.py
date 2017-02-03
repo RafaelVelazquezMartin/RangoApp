@@ -14,8 +14,10 @@ def index(request):
 	return render(request, 'rango/index.html', context=context_dict)
 	
 def about(request):
-	html = "<html><body>Rango says this is the about page.<br/> <a href='/rango/'>Index</a></body></html>"
-	return HttpResponse(html)
+
+	context_dict = {}
+
+	return render(request, 'rango/about.html', context=context_dict)
 
 
 #Deploy server command -- python manage.py runserver
