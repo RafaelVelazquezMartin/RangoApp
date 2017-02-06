@@ -1,14 +1,11 @@
-<!doctype html>
+{% extends 'rango/base.html' %}
+{% load staticfiles	%}
 
-{% load staticfiles	%}	<!-- New line -->
-<html>
+{% block title_block %}
+	About
+{% endblock %}
 
-<head>
-	<meta charset="utf-8">
-	<title>About</title>
-</head>
-
-<body>
+{% block body_block %}
 	<h1>About</h1>
 	<div>
 		This tutorial has been put together by Rafael.<br/>
@@ -17,8 +14,4 @@
 	<div>
 		<img src="{{MEDIA_URL}}cat.jpg" alt="Picture of a cat" />
 	</div>
-	<div>
-		<a href="/rango/">Index</a><br/>
-	</div>
-</body>
-</html>
+{% endblock %}
