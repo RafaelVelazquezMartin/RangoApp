@@ -82,6 +82,9 @@ def	add_cat(name, views=0, likes=0):
     elif (name == "Other Frameworks"):
         views = 32
         likes = 16
+    else:
+        views = 64
+        likes = 32
     c.views=views
     c.likes=likes
     c.save()
